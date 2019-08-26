@@ -9,6 +9,21 @@ public class A1Novice {
 		Scanner scan = new Scanner(System.in);
 
 		// Your code follows here.
-		
+		int numCustomers = scan.nextInt();
+		for (int i = 0; i < numCustomers; i++) {
+			String firstName = scan.next();
+			char firstInitial = firstName.charAt(0);
+			String lastName = scan.next();
+			int numItems = scan.nextInt();
+			double sumCharges = 0.0;
+			for (int j = 0; j < numItems; j++) {
+				int numItem = scan.nextInt();
+				String nameItem = scan.next();
+				double priceItem = scan.nextDouble();
+				sumCharges += numItem * priceItem;
+			}
+			System.out.println(firstInitial + ". " + lastName + ": " + sumCharges);
+		} 
+	    scan.close();
 	}
 }
