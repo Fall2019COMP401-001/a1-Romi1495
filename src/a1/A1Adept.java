@@ -51,9 +51,9 @@ public class A1Adept {
 			sumAll += sumCharges;
 		}
 		double average = sumAll / numCustomers;
-		System.out.println("Biggest: " + maxCustomer + " (" + maxSpending + ')');
-		System.out.println("Smallest: " + minCustomer + " (" + minSpending + ')');
-		System.out.println("Average: " + average);
+		System.out.println("Biggest: " + maxCustomer + " (" + String.format("%.2f", maxSpending) + ')');
+		System.out.println("Smallest: " + minCustomer + " (" + String.format("%.2f", minSpending) + ')');
+		System.out.println("Average: " + String.format("%.2f", average));
 	    scan.close();
 	}
 	

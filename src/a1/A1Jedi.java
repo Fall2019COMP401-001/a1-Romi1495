@@ -25,7 +25,7 @@ public static void main(String[] args) {
 			customerName += ' ';
 			customerName += scan.next();
 			int numItems = scan.nextInt();
-			String[] scanned = new String[20];
+			String[] scanned = new String[numItems];
 			for (int j = 0; j < numItems; j++) {
 				int numItem = scan.nextInt();
 				String itemName = scan.next();
@@ -62,7 +62,7 @@ public static void main(String[] args) {
 	}
 	public static boolean isUnique(String itemName, String[] scanned) {
 		for (int e = 0; e < scanned.length; e++) {
-			if (scanned[e].equals(itemName)) {
+			if (itemName.equals(scanned[e])) {
 				return false;
 				}
 		}

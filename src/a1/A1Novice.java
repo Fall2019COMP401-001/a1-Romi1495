@@ -22,7 +22,7 @@ public class A1Novice {
 				double priceItem = scan.nextDouble();
 				sumCharges += numItem * priceItem;
 			}
-			System.out.println(firstInitial + ". " + lastName + ": " + sumCharges);
+			System.out.println(firstInitial + ". " + lastName + ": " + String.format("%.2f", sumCharges));
 		} 
 	    scan.close();
 	}
